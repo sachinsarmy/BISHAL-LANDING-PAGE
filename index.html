@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BHT CLUB Sureshot </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VASHU sureshot</title>
 
-
-
+<meta http-equiv="refresh" content="30;url=https://t.me/+WSR7KgQPjew5N2Q1">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -18,271 +17,307 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1244446937194337');
+fbq('init', '978682668657857');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1244446937194337&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=978682668657857&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-
-
-
 <style>
+
 :root{
-  --panel:#071e1d;
-  --teal1:#0ef2d5;
-  --teal2:#13f2ff;
-  --btn-text:#001818;
-  --muted:rgba(255,255,255,0.75);
-  --label-red:#ff2f5a;
+--bg:#031616;
+--card:#062626;
+--primary:#18f3da;
+--text:#ffffff;
+--muted:#9fded7;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:system-ui,Arial;
 }
 
 body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:linear-gradient(180deg,#061214,#081617,#071013);
-  color:#fff;
-  overflow-x:hidden;
+background: radial-gradient(circle at top,#053030,var(--bg));
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--text);
 }
 
-/* CENTER WRAPPER */
-.center-wrap{
-  display:flex;
-  justify-content:center;
-  padding:40px 0;
+/* LIVE POPUP */
+
+#liveJoin{
+position:fixed;
+top:12px;
+left:50%;
+transform:translateX(-50%);
+background:#062626;
+padding:10px 20px;
+border-radius:30px;
+font-size:14px;
+box-shadow:0 0 15px rgba(0,255,220,.6);
+opacity:0;
+transition:.4s;
+z-index:999;
+white-space:nowrap;
 }
 
-/* MAIN CARD */
-.wrap{
-  max-width:400px;
-  width:80%;
-  background:var(--panel);
-  border-radius:20px;
-  padding:22px 20px 30px;
-  text-align:center;
-  position:relative;
+/* CARD */
 
-  box-shadow:
-    0 0 0 1px rgba(14,242,213,0.35),
-    0 0 20px rgba(14,242,213,0.25),
-    0 0 40px rgba(19,242,255,0.15),
-    0 25px 45px rgba(0,0,0,0.7);
-
-  animation: edgeGlow 3s ease-in-out infinite alternate;
+.container{
+width:100%;
+max-width:380px;
+padding:18px;
 }
 
-@keyframes edgeGlow{
-  from{
-    box-shadow:
-      0 0 0 1px rgba(67, 242, 14, 0.25),
-      0 0 16px rgba(14, 242, 37, 0.18),
-      0 0 32px rgba(19,242,255,0.1),
-      0 25px 45px rgba(0,0,0,0.7);
-  }
-  to{
-    box-shadow:
-      0 0 0 1px rgba(14, 242, 41, 0.45),
-      0 0 28px rgba(14,242,213,0.35),
-      0 0 55px rgba(19,242,255,0.22),
-      0 25px 45px rgba(0,0,0,0.7);
-  }
+.card{
+background:var(--card);
+border-radius:20px;
+padding:24px 20px 28px;
+box-shadow:0 0 40px rgba(24,243,218,.25);
+text-align:center;
 }
 
-.marquee{
-  background:linear-gradient(90deg,var(--teal1),var(--teal2));
-  color:var(--btn-text);
-  font-weight:900;
-  padding:10px 0;
-  border-radius:12px;
-  margin-bottom:12px;
-  font-size:15px;
-  letter-spacing:1px;
+.badge{
+background:var(--primary);
+color:#012;
+font-weight:700;
+padding:8px 14px;
+border-radius:999px;
+font-size:13px;
+margin-bottom:18px;
+display:inline-block;
 }
 
-.profile-box{
-  width:180px;
-  height:180px;
-  margin:12px auto 18px;
-  border-radius:18px;
-  overflow:hidden;
-  border:4px solid rgba(14,242,213,0.25);
+.profile{
+width:120px;
+height:120px;
+margin:0 auto 14px;
+border-radius:18px;
+overflow:hidden;
+border:3px solid var(--primary);
 }
-.profile-box img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 h1{
-  font-size:28px;
-  margin:6px 0;
-  font-weight:800;
-}
-.subtitle{
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:18px;
+font-size:26px;
+margin-bottom:6px;
 }
 
-.pill{
-  display:block;
-  width:100%;
-  padding:18px 0;
-  margin:14px 0;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--teal1),var(--teal2));
-  color:var(--btn-text);
-  font-weight:900;
-  font-size:18px;
-  text-decoration:none;
-  letter-spacing:1px;
-}
-.pill-sub{
-  font-size:12px;
-  color:var(--muted);
+.sub{
+font-size:14px;
+color:var(--muted);
+margin-bottom:18px;
 }
 
-.hurry{
-  color:var(--teal1);
-  font-weight:800;
-  margin-top:6px;
+/* BUTTON */
+
+.btn{
+display:block;
+width:100%;
+background:var(--primary);
+color:#012;
+font-weight:800;
+text-decoration:none;
+padding:16px 0;
+border-radius:999px;
+font-size:16px;
+margin:16px 0;
+animation:pulse 1.8s infinite;
 }
 
-.timer{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  margin:16px 0 20px;
-}
-.cell{
-  background:rgba(1,40,38,0.6);
-  padding:12px 16px;
-  border-radius:10px;
-  width:70px;
-}
-.num{
-  font-size:28px;
-  font-weight:800;
-}
-.lab{
-  font-size:12px;
-  color:var(--label-red);
-  margin-top:4px;
-  font-weight:700;
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(24,243,218,.7);}
+70%{box-shadow:0 0 0 14px rgba(24,243,218,0);}
+100%{box-shadow:0 0 0 0 rgba(24,243,218,0);}
 }
 
-.features{margin-bottom:18px;}
-.feature-item{
-  margin:6px 0;
-  font-weight:700;
-  color:var(--muted);
+.urgent{
+font-size:14px;
+color:#00ffe0;
+margin-bottom:12px;
+font-weight:600;
 }
 
-.divider{
-  height:1px;
-  background:rgba(255,255,255,0.05);
-  margin:20px auto;
+.warning{
+color:#ff4b4b;
+font-weight:700;
+margin-bottom:12px;
 }
 
-.exp h2{font-size:20px;}
-.big{
-  color:var(--teal1);
-  font-weight:800;
-}
-.mini{
-  font-size:12px;
-  opacity:0.6;
-  letter-spacing:2px;
+.features{
+text-align:left;
+margin:16px 0;
 }
 
-/* CONTACT SECTION */
-.contact-section{
-  text-align:center;
-  padding:30px 20px;
-  background:#071e1d;
-  max-width:400px;
-  margin:30px auto 50px;
-  border-radius:15px;
-  box-shadow:0 0 15px rgba(14,242,213,0.2);
+.features li{
+list-style:none;
+font-size:14px;
+margin:8px 0;
 }
 
-.contact-btn{
-  background:linear-gradient(90deg,#0ef2d5,#13f2ff);
-  color:#001818;
-  padding:10px 18px;
-  text-decoration:none;
-  border-radius:30px;
-  font-weight:800;
-  font-size:14px;
-  display:inline-block;
+.features li::before{
+content:"★";
+color:#ffd54a;
+margin-right:8px;
+}
+
+.counter{
+margin-top:10px;
+font-weight:700;
+color:#18f3da;
+font-size:14px;
+}
+
+.redirect{
+margin-top:10px;
+font-size:13px;
+color:#ffd54a;
+}
+
+.footer{
+border-top:1px solid rgba(255,255,255,.08);
+margin-top:18px;
+padding-top:14px;
+font-size:13px;
+color:#9fded7;
+}
+
+.highlight{
+color:var(--primary);
+font-weight:700;
 }
 
 </style>
-
-<script>
-let m=30,s=0;
-setInterval(()=>{
-  document.getElementById("min").innerText=String(m).padStart(2,'0');
-  document.getElementById("sec").innerText=String(s).padStart(2,'0');
-  if(s===0){ if(m===0)return; m--; s=59; } else s--;
-},1000);
-</script>
 </head>
 
 <body>
 
-<div class="center-wrap">
-  <div class="wrap">
+<div id="liveJoin"></div>
 
-    <div class="marquee">
-      <marquee scrollamount="4">🔥 FREE VIP SURESHOT • LIMITED TIME • JOIN FAST 🔥</marquee>
-    </div>
+<div class="container">
+<div class="card">
 
-    <div class="profile-box">
-      <img src="BHARAT CLUB.jpg">
-    </div>
+<div class="badge">🔥 FREE VIP SURESHOT • LIMITED TIME</div>
 
-    <h1>𝐁𝐇𝐓 𝐂𝐋𝐔𝐁 𝐒𝐔𝐑𝐄𝐒𝐇𝐎𝐓 🌪</h1>
-    <div class="subtitle">JOIN FAST FOR FREE SURESHOT VIP HACKS</div>
-
-    <a class="pill" href="https://t.me/+22Ac74AP-psyNzhl" >𝐉𝐎𝐈𝐍 𝐇𝐀𝐂𝐊 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</a>
-    <div class="pill-sub">FREE VIP HACKS</div>
-
-    <div class="hurry">HURRY UP! JOIN NOW</div>
-
-    <div class="timer">
-      <div class="cell"><div class="num" id="min">30</div><div class="lab">MIN</div></div>
-      <div class="cell"><div class="num" id="sec">00</div><div class="lab">SEC</div></div>
-    </div>
-
-    <div class="features">
-      <div class="feature-item">⭐ 100% WINNING SURESHOT</div>
-      <div class="feature-item">⭐ 100% LOSS RECOVERY</div>
-      <div class="feature-item">⭐ MONTHLY INCOME 30K–50K</div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="exp">
-      <h2>5+ YEARS EXPERIENCE</h2>
-      <div class="big">10 LAKH+ WINNING</div>
-      <div class="mini">NUMBER KING</div>
-    </div>
-
-  </div>
+<div class="profile">
+<img src="MILLIONARE.jpeg">
 </div>
+
+<h1>𝐕𝐀𝐒𝐇𝐔 𝐕𝐈𝐏 𝐒𝐔𝐑𝐄𝐒𝐇𝐎𝐓 🎗️</h1>
+
+<div class="sub">Join fast for free VIP updates</div>
+
+<a class="btn" href="https://t.me/+Wm_6cuWmF9RlYzk9" target="_blank">
+𝐉𝐎𝐈𝐍 𝐇𝐀𝐂𝐊 𝐂𝐇𝐀𝐍𝐍𝐄𝐋
+</a>
+
+<div class="urgent">⚡ Limited Seats Available</div>
+
+<div class="warning">
+⚠ Only <span id="seats">37</span> VIP seats remaining today
+</div>
+
+<ul class="features">
+<li>High accuracy prediction system</li>
+<li>Smart risk management method</li>
+<li>Daily free VIP updates</li>
+<li>Fast withdraw strategy</li>
+</ul>
+
+<div class="counter">
+👥 10,27,534+ Members Joined
+</div>
+
+<div class="redirect">
+Redirecting to Telegram in <span id="count">30</span> seconds...
+</div>
+
+<div class="footer">
+<div>5+ Years Experience</div>
+<div class="highlight">10 Lakh+ Winning Community</div>
+</div>
+
+</div>
+</div>
+
+<script>
+
+/* COUNTDOWN */
+
+let time=30;
+
+setInterval(()=>{
+time--;
+document.getElementById("count").innerText=time;
+
+if(time<=0){
+window.location.href="https://t.me/+k6GZ8WXzo_w3Zjg1";
+}
+
+},1000);
+
+
+/* LIVE JOIN POPUP */
+
+const names=[
+"Rahul","Aman","Vikram","Rohit","Sahil",
+"Arjun","Deepak","Ankit","Sumit","Karan",
+"Neeraj","Yash","Ajay","Nitin","Harsh",
+"Manish","Tarun","Abhishek","Raj","Vivek"
+];
+
+const cities=[
+"Delhi","Mumbai","Jaipur","Lucknow",
+"Patna","Bangalore","Kolkata","Surat",
+"Indore","Chandigarh"
+];
+
+function showJoin(){
+
+let name=names[Math.floor(Math.random()*names.length)];
+let city=cities[Math.floor(Math.random()*cities.length)];
+
+let box=document.getElementById("liveJoin");
+
+box.innerHTML="🔥 "+name+" from "+city+" just joined the VIP channel";
+
+box.style.opacity="1";
+
+setTimeout(()=>{
+box.style.opacity="0";
+},3000);
+
+}
+
+setInterval(showJoin,4000);
+
+
+/* DECREASING SEATS */
+
+let seats=37;
+
+setInterval(()=>{
+
+if(seats>12){
+seats--;
+document.getElementById("seats").innerText=seats;
+}
+
+},7000);
+
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
